@@ -7,8 +7,8 @@ export const useGames = () => {
     const [games, setGames] = useState<Game[]>([])
     const [error, setError] = useState('')
 
-
     useEffect(() => {
+        // Read about it
         const controller = new AbortController()
 
         apiClient.get<FetchGameResposne>('/games', { signal: controller.signal})
