@@ -1,3 +1,5 @@
+import { ReactNode } from "react"
+
 export interface Game {
     id: number
     name: string
@@ -27,3 +29,6 @@ export interface CriticScoreProps {
     score: number
 }
 
+export interface GameCardContainerProps {
+    children: ReactNode
+}

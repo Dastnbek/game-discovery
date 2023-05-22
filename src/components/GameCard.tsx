@@ -9,7 +9,7 @@ export const GameCard = ({ game }: GameCardProps) => {
     const image_url = getCroppedImageUrl(background_image)
 
     return (
-        <Card borderRadius={10} overflow="hidden">
+        <Card>
             <Image src={image_url} />
             <CardBody>
                 <Heading fontSize="2xl">{name}</Heading>
