@@ -26,3 +26,4 @@ export interface PlatformIconListProps {
 export interface CriticScoreProps {
     score: number
 }
+
