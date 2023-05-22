@@ -7,9 +7,19 @@ export interface Game {
     parent_platforms: { platform: Platform }[]
     metacritic: number
 }
+
+export interface Genre {
+    id: number
+    name: string
+}
 export interface FetchGameResposne {
     count: number
     results: Game[]
+}
+
+export interface FetchGenresResponse {
+    count: number
+    results: Genre[]
 }
 
 export interface GameCardProps {
