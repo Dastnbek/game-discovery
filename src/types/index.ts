@@ -42,3 +42,8 @@ export interface CriticScoreProps {
 export interface GameCardContainerProps {
     children: ReactNode
 }
+
+export interface GenericFetchRespose<T> {
+    count: number
+    results: T[]
+}
