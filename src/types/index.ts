@@ -3,6 +3,7 @@ export interface Game {
     name: string
     background_image?: string
     parent_platforms: { platform: Platform }[]
+    metacritic: number
 }
 export interface FetchGameResposne {
     count: number
@@ -20,4 +21,8 @@ export interface Platform {
 
 export interface PlatformIconListProps {
     platforms: Platform[]
+}
+
+export interface CriticScoreProps {
+    score: number
 }
