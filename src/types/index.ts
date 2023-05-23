@@ -48,3 +48,7 @@ export interface GenericFetchRespose<T> {
     count: number
     results: T[]
 }
+
+export interface GenreListProps {
+    onSelectGenre: (genre: Genre) => void 
+}
